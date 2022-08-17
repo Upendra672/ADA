@@ -1,7 +1,7 @@
 #include <stdio.h>
 void bubble_sort(int a[], int n) {
     int i = 0, j = 0, tmp;
-    for (i = 0; i < n; i++) {   
+    for (i = 0; i < n-1; i++) {   
         for (j = 0; j < n - 1; j++) { 
             if (a[j] > a[j + 1]) { 
                 tmp = a[j];
@@ -13,7 +13,7 @@ void bubble_sort(int a[], int n) {
 }
 void bubble_sort_semi(int a[], int n) {
     int i = 0, j = 0, tmp;
-    for (i = 0; i < n; i++) {   
+    for (i = 0; i < n-1; i++) {   
         for (j = 0; j < n - i - 1; j++) { 
             if (a[j] > a[j + 1]) { 
                 tmp = a[j];
@@ -26,7 +26,7 @@ void bubble_sort_semi(int a[], int n) {
 void bubble_sort_full(int a[], int n) {
     int i = 0, j = 0, tmp;
     int flag=0;
-    for (i = 0; i < n; i++) {   
+    for (i = 0; i < n-1; i++) {   
         for (j = 0; j < n - i - 1; j++) { 
             if (a[j] > a[j + 1]) { 
                 tmp = a[j];
