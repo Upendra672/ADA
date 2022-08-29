@@ -1,3 +1,7 @@
+//bubble sort for classical/semi optimised & optimised
+//200450131028
+
+
 #include <stdio.h>
 void bubble_sort(int a[], int n) {
     int i = 0, j = 0, tmp;

@@ -1,3 +1,6 @@
+// insertion sort for descending order
+
+
 #include <stdio.h>
 
 int main()
@@ -17,7 +20,7 @@ int main()
         temp = a[i];
         for (j = i - 1 ; j >= 0; j--)
             {
-            if (a[j] > temp)
+            if (a[j] < temp)
                 a[j+1] = a[j];
             else
                 break;
