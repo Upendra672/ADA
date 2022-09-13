@@ -1,30 +1,30 @@
 #include<stdio.h>
-#define N 100
-int dfs(int v);
-
-int main()
+ 
+void DFS(int);
+int G[10][10],visited[10],n;  
+void main()
 {
-    int a[N][N],n,i,j;
-    printf("enter the number of nodes:");
-    scanf("%d",&n);
-
-    for(i=0;i<n;i++)
-    {
-        
-        for(j=0;j<n;j++){
-        printf("enter the %d row",i);
-        printf("and %d column:",j);
-        scanf("%d",&a[i][j]);
-        }
-        printf("\n");
-    }
-    printf("Matrix is:\n");
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++){
-            printf(" %d ",a[i][j]);
-        }
-        printf("\n");
-    }
-    printf("enter the starting node %d");
+    int i,j;
+    printf("Enter number of vertices:");
+  
+scanf("%d",&n);
+    
+printf("\nEnter adjecency matrix of the graph:");
+  
+for(i=0;i<n;i++)
+       for(j=0;j<n;j++)
+scanf("%d",&G[i][j]);
+    
+   for(i=0;i<n;i++)
+        visited[i]=0;
+    DFS(0);
+}
+void DFS(int i)
+{
+    int j;
+printf("\n%d",i);
+    visited[i]=1;
+for(j=0;j<n;j++)
+       if(!visited[j]&&G[i][j]==1)
+            DFS(j);
 }
