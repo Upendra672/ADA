@@ -1,6 +1,5 @@
-//Bubblesort with run time 
+//Bubblesort with time analysis
 //200450131028
-
 
 #include <stdio.h>
 #include <sys/time.h>

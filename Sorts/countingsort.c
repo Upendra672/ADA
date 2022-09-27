@@ -1,7 +1,6 @@
 //counting sort
 //200450131028
 
-
 #include<stdio.h>
 
 

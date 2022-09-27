@@ -1,9 +1,9 @@
-//Insertionsort with run time 
+//Insertionsort with time analysis
 //200450131028
-
 
 #include <stdio.h>
 #include <sys/time.h>
+// #include<time.h>
 void insertion_sort(int[], int);
 
 void insertion_sort(int a[], int n) 
@@ -26,7 +26,7 @@ void insertion_sort(int a[], int n)
 int main(){
     int a[100], n, i;
     clock_t start,end;
-    double time=0;
+    double time;
     printf("Enter number of elements in the array:\n");
     scanf("%d", &n); 
     printf("Enter %d integers\n", n);
