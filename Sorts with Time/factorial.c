@@ -1,3 +1,6 @@
+//factorial using iterative and recursion
+//200450131028
+
 #include<stdio.h>
 #include<sys/time.h>
 int fact_iterative(int);

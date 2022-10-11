@@ -1,4 +1,7 @@
-# include<stdio.h>
+//Implementing knapsake with greedy  algorithm
+//200450131028 
+
+#include<stdio.h>
  
 void knapsack(int n, float weight[], float profit[], float capacity) {
    float x[20], tp = 0;
